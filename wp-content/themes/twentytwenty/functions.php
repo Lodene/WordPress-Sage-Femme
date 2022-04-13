@@ -786,3 +786,44 @@ function twentytwenty_get_elements_array() {
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+
+
+
+wp_register_style('custome', get_template_directory_uri().'/css/custome.css', array(), '1.0', 'all');
+
+add_Action('wp_enqueue_scripts', 'addCSS');
+function addCSS(){
+	wp_enqueue_style('custome');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//personnalisation du menu
+function register_my_menus() {
+	register_nav_menus(
+	  array(
+		'header' => __( 'Header Menu' ),
+		other' => __( 'Autre menu' )
+	   )
+	 );
+   }
+   add_action( 'init', 'register_my_menus' );
+*/

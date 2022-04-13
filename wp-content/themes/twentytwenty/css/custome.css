@@ -1,0 +1,156 @@
+
+
+.purple.Color {
+    color: purple;
+	text-align: center;
+}
+
+.red.Color {
+	color: red;
+	text-align: start;
+}
+
+.green.Color{
+	color: green;
+	text-align: end;
+}
+
+.blue.Color{
+	color: rgb(67, 67, 158);
+	text-align: center;
+}
+
+.Color {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.black.Color.lastP {
+    color: black;
+	font-size: 26px;
+    text-align: center;
+}
+
+.black.Color.firstP  {
+    color: rgba(38, 36, 36, 0.8);
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.TextQuestions {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.wp-block-navigation-item__label:hover {
+	font-weight: bold;
+}
+
+
+.wp-block-columns.cabinet {
+	
+}
+
+.wp-image-742, .wp-image-741 {
+	width: 35rem;
+}
+
+.wp-block-column.is-vertically-aligned-center.image654 {
+	margin: 0;
+}
+
+.textAdresse {
+	font-size: 2rem;
+}
+
+
+.wp-block-column {
+    
+}
+
+.wp-block-column.backgroundNoir {
+    margin: 0 0 0 800px;
+	background: rgba(62,59,57,0.7);
+	width: 300px;
+	padding: 40px;
+	color: #ffffff;
+	box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5), 0px 0px 6px 0px rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+    height: min-content;
+    
+}
+
+.has-text-align-center.has-large-font-size {
+    
+    font-family: Satisfy;
+}
+
+.wp-block-column.backgroundNoirContact {
+    margin: 0 0 0 800px;
+	background: rgba(62,59,57,0.7);
+	width: 300px;
+	color: #ffffff;
+	box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5), 0px 0px 6px 0px rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+    height: min-content;
+}
+
+.has-larger-font-size {
+    font-family: Satisfy;
+    padding: 0 0 30px 0;
+}
+.wp-block-column.backgroundBlanc {
+    float: left;
+	background: #FFF;
+	width: 60%;
+	padding: 40px;
+	height: min-content;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    font-family: Satisfy;
+    
+}
+
+.wp-block-image.size-large {
+    display: flex;
+    justify-content: center;
+}
+
+.wp-container-2.wp-block-group {
+    display: block;
+}
+
+.wp-image-787 {
+    width: 1100px;
+}
+
+.wp-block-column.cabinet {
+	background: #FFF;
+	width: 60%;
+	padding: 40px;
+	height: min-content;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    text-align: center;
+    padding-top: 0;
+}
+
+.wp-block-column.localisation {
+    margin: 0 0 0 800px;
+	background: rgba(62,59,57,0.7);
+	width: 300px;
+	color: #ffffff;
+	box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5), 0px 0px 6px 0px rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+    height: min-content;
+    text-align: center;
+    padding-top: 0;
+}
+
+.wp-block-navigation-item__label {
+    text-decoration: underline;
+}
+
+.maps {
+    padding-left: 20px;
+}
