@@ -25,7 +25,8 @@ class ReviewBanner {
 		$from_hubspot_text   = __( 'HubSpot for WordPress Team', 'leadin' );
 		?>
 			<div id="leadin-review-banner" class="leadin-banner leadin-review-banner notice notice-warning">
-				<a href="?leadin_review=false&_wpnonce=<?php echo esc_html( $nonce ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>" id="dismiss-review-banner-button">
+
+				<a href="?leadin_review=false&_wpnonce=<?php echo esc_html( $nonce ); ?>" id="dismiss-review-banner-button">
 					<button class="leadin-review-banner__dismiss notice-dismiss">
 						<span class="screen-reader-text">
 							<?php	echo esc_html( $dismiss_notice_text ); ?>
@@ -44,7 +45,7 @@ class ReviewBanner {
 							<a
 								class="leadin-banner__link"
 								id="leave-review-button" target="_blank"
-								href="?leadin_review=true&_wpnonce=<?php echo esc_html( $nonce ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>"
+								href="?leadin_review=true&_wpnonce=<?php echo esc_html( $nonce ); ?>"
 								onclick="hideBanner()"
 								aria-label="<?php echo esc_html( __( 'Leave us a review | link opens in a new tab', 'leadin' ) ); ?>"
 							>

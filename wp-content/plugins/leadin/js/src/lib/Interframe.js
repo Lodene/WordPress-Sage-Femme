@@ -14,6 +14,7 @@ import {
   skipReview,
   skipSignup,
   updateHublet,
+  getPortalHublet,
   trackConsent,
 } from '../api/wordpressAjaxClient';
 
@@ -37,6 +38,7 @@ const methods = {
   fetchOAuthToken,
   skipReview,
   updateHublet,
+  getPortalHublet,
   trackConsent,
 };
 

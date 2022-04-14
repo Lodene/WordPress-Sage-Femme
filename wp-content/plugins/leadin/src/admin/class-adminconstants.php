@@ -169,6 +169,7 @@ class AdminConstants {
 			'locale'                => get_locale(),
 			'ajaxNonce'             => wp_create_nonce( 'hubspot-ajax' ),
 			'restNonce'             => wp_create_nonce( 'wp_rest' ),
+			'routeNonce'            => wp_create_nonce( 'hubspot-route' ),
 			'hubspotNonce'          => self::get_connection_nonce(),
 			'redirectNonce'         => wp_create_nonce( Routing::REDIRECT_NONCE ),
 			'phpVersion'            => Versions::get_wp_version(),

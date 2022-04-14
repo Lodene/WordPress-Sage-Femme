@@ -26,6 +26,8 @@ class PageHooks {
 		add_shortcode( 'hubspot', array( $this, 'leadin_add_hubspot_shortcode' ) );
 	}
 
+
+
 	/**
 	 * Generates 10 characters long string with random values
 	 */
@@ -45,9 +47,25 @@ class PageHooks {
 	}
 
 	/**
+	 * Checks if input is a valid uuid.
+	 *
+	 * @param String $uuid input to validate.
+	 */
+	private static function is_valid_uuid( $uuid ) {
+		if ( ! is_string( $uuid ) || ( preg_match( '/^[a-f\d]{8}(-[a-f\d]{4}){4}[a-f\d]{8}$/i', $uuid ) !== 1 ) ) {
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * Adds the script loader to the page.
 	 */
 	public function add_frontend_scripts() {
+		if ( $this->is_elementor_preview_mode() || current_user_can( 'edit_posts' ) ) {
+			return;
+		}
+
 		if ( is_single() ) {
 			$page_type = 'post';
 		} elseif ( is_front_page() ) {
@@ -67,6 +85,13 @@ class PageHooks {
 		);
 
 		AssetsManager::enqueue_script_loader( $leadin_wordpress_info );
+	}
+
+	/**
+	 * Check to see if Elementor is not on edit/preview mode to avoid script loader
+	 */
+	public function is_elementor_preview_mode() {
+		return is_plugin_active( 'elementor/elementor.php' ) && ( \Elementor\Plugin::$instance->preview->is_preview_mode() || \Elementor\Plugin::$instance->editor->is_edit_mode() );
 	}
 
 	/**
@@ -135,6 +160,15 @@ class PageHooks {
 
 		$portal_id = $parsed_attributes['portal'];
 		$id        = $parsed_attributes['id'];
+
+		$is_valid_id = self::is_valid_uuid( $id ) || is_numeric( $id );
+
+		if (
+			! is_numeric( $portal_id ) ||
+			! $is_valid_id
+			) {
+				return;
+		}
 
 		switch ( $parsed_attributes['type'] ) {
 			case 'form':

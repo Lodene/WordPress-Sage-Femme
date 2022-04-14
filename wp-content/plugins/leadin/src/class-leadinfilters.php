@@ -62,9 +62,11 @@ class LeadinFilters {
 
 	/**
 	 * Apply filter to get the base url for the HubSpot api.
+	 *
+	 * @param String $cross_hublet if true it's use non-hublet specific prefix. For example, "api" instead of "api-eu1".
 	 */
-	public static function get_leadin_base_api_url() {
-		$prefix = self::get_leadin_api_prefix();
+	public static function get_leadin_base_api_url( $cross_hublet = false ) {
+		$prefix = $cross_hublet ? 'api' : self::get_leadin_api_prefix();
 		$domain = self::get_leadin_domain();
 		return apply_filters( 'leadin_base_api_url', "https://$prefix.$domain" );
 	}

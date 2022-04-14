@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2968537130d29948a4946c0afb722490
+class ComposerStaticInitbc37fe1efd3ad8eaca3c802ac4602d77
 {
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -31,6 +31,7 @@ class ComposerStaticInit2968537130d29948a4946c0afb722490
         'Leadin\\admin\\api\\ApiGenerator' => __DIR__ . '/../..' . '/src/admin/api/class-apigenerator.php',
         'Leadin\\admin\\api\\ApiMiddlewares' => __DIR__ . '/../..' . '/src/admin/api/class-apimiddlewares.php',
         'Leadin\\admin\\api\\DisconnectApi' => __DIR__ . '/../..' . '/src/admin/api/class-disconnectapi.php',
+        'Leadin\\admin\\api\\GetPortalHubletApi' => __DIR__ . '/../..' . '/src/admin/api/class-getportalhubletapi.php',
         'Leadin\\admin\\api\\RegistrationApi' => __DIR__ . '/../..' . '/src/admin/api/class-registrationapi.php',
         'Leadin\\admin\\api\\SkipReviewApi' => __DIR__ . '/../..' . '/src/admin/api/class-skipreviewapi.php',
         'Leadin\\admin\\api\\TrackConsentApi' => __DIR__ . '/../..' . '/src/admin/api/class-trackconsentapi.php',
@@ -56,7 +57,7 @@ class ComposerStaticInit2968537130d29948a4946c0afb722490
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit2968537130d29948a4946c0afb722490::$classMap;
+            $loader->classMap = ComposerStaticInitbc37fe1efd3ad8eaca3c802ac4602d77::$classMap;
 
         }, null, ClassLoader::class);
     }

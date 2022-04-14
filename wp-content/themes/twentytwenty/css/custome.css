@@ -121,8 +121,9 @@
     display: block;
 }
 
-.wp-image-787 {
-    width: 1100px;
+.wp-image-742, .wp-image-741 {
+    width: 325px !important;
+	/*height: 800px !important;*/
 }
 
 .wp-block-column.cabinet {
@@ -153,4 +154,32 @@
 
 .maps {
     padding-left: 20px;
+}
+
+
+.primary-menu.reset-list-style a {
+	color: black !important;
+}
+
+* {
+	font-family: Satisfy, kreon, sans-serif;
+}
+
+.wp-block-navigation-item__label, .primary-menu.reset-list-style a, .InfoImportantes.p {
+	font-family: kreon, sans-serif;
+}
+
+.entry-title{
+	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.Titre.Cabinet {
+	font-family: Satisfy, kreon, sans-serif;
+	padding-top: 25px;
+}
+
+.helpie-faq.accordions.faq-toggle.open-first {
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }

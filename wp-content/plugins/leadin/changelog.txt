@@ -1,3 +1,15 @@
+= 8.9.22 (2022-04-13) =
+* Prevent script to be loaded while Elementor Edit mode is on/or admin
+
+= 8.9.20 (2022-04-13) =
+* Fix security issue related to sanitizing inputs
+
+= 8.9.14 (2022-04-12) =
+* Fix security issue related to form inputs
+
+= 8.9.0 (2022-04-11) =
+* Add api that gets the correct hublet
+
 = 8.8.15 (2022-04-07) =
 * Fix security issue related to proxy URL
 
@@ -337,24 +349,4 @@
 
 = 7.17.2 (2019-11-13) =
 * Fix missing disconnect button
-
-= 7.15.11 (2019-10-23) =
-* Prevent wordpress notices flash when navigating through the plugin menu
-* Improve UI of reminder notice on the WP dashboard
-* Redirects to login page when the user is not authenticated
-* Add Contacts and Lists to the plugin
-
-= 7.14.1 (2019-10-09) =
-* Verify email on signup
-* Remove version from tracking code
-* Redirect from top level menu to dashboard
-* Add HubSpot dashboard
-* Fix navbar showing on the form pag
-
-= 7.13.11 (2019-10-09) =
-* Automatic connection when only one portal is available
-
-= 7.12.14 (2019-09-25) =
-* Add new forms dashboard
-* Add "Advanced Features" link in menu
 

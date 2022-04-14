@@ -51,6 +51,10 @@ export function updateHublet(hublet) {
   return postAjax('leadin_update_hublet', { hublet });
 }
 
+export function getPortalHublet(hublet) {
+  return postAjax('leadin_get_portal_hublet', { hublet });
+}
+
 export function trackConsent(canTrack) {
   return postAjax('leadin_track_consent', { canTrack });
 }

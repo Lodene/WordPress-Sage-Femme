@@ -30,6 +30,7 @@ return array(
     'Leadin\\admin\\api\\ApiGenerator' => $baseDir . '/src/admin/api/class-apigenerator.php',
     'Leadin\\admin\\api\\ApiMiddlewares' => $baseDir . '/src/admin/api/class-apimiddlewares.php',
     'Leadin\\admin\\api\\DisconnectApi' => $baseDir . '/src/admin/api/class-disconnectapi.php',
+    'Leadin\\admin\\api\\GetPortalHubletApi' => $baseDir . '/src/admin/api/class-getportalhubletapi.php',
     'Leadin\\admin\\api\\RegistrationApi' => $baseDir . '/src/admin/api/class-registrationapi.php',
     'Leadin\\admin\\api\\SkipReviewApi' => $baseDir . '/src/admin/api/class-skipreviewapi.php',
     'Leadin\\admin\\api\\TrackConsentApi' => $baseDir . '/src/admin/api/class-trackconsentapi.php',

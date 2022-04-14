@@ -34,7 +34,7 @@ class NoticeManager {
 							esc_html( __( 'The HubSpot plugin isn’t connected right now. To use HubSpot tools on your WordPress site, %1$sconnect the plugin now%2$s.', 'leadin' ) ),
 							'<a class="leadin-banner__link" href="admin.php?page=leadin&bannerClick=true">',
 							'</a>'
-						); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+						);
 					?>
 				</p>
 			</div>
